@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-4.0.3);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+div
+{
+    border-style: solid;
+    padding: 20px;
+    border-radius: 50px;
+    border-width: 5px;
+    text-align: center;
+}
+.demo
+{
+    border-style:solid;
+    animation-name: colorChange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}   
+input
+{
+    border-radius: 10px;
+    height: 30px;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-color:black;
+    color: white;
+    width: 20rem;
+    height: 170px;
+    border-radius: 10px;
+    padding: 5em 2rem;
+    box-shadow: 0px 0px 50px 0px cyan;
+    border: 3px solid red;
+}
+.form-container:hover
+{
+    box-shadow: 0px 0px 20px 10px orange;
+    border: 5px solid cyan;
+}
+.buttons
+{
+    background: transparent;
+    border-radius: 6rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#uname,#pwd
+{
+    width: 250px;
+    height: 40px;
+    border-color:sandybrown;
+    border-width: 2px;
+    text-align: center;
+    border: 3px solid cyan;
+    margin: 1rem;
+    color: white;
+    background: transparent;
+    padding: 1.5rem 2rem;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    outline: none;
+    transition: all .2s ease-in-out;
+}
+#uname,#pwd
+{
+   animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#uname:focus,
+#pwd:focus
+{
+    width: 18rem;
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorChange 
+{
+
+    0% {
+        border-color: green;
+        color: green;
+    }
+
+    10% {
+        border-color: yellow;
+        color: yellow;
+
+    }
+
+    20% {
+        border-color: hotpink;
+        color: hotpink;
+    }
+
+    30% {
+        border-color: red;
+        color: red;
+    }
+
+    40% {
+        border-color: purple;
+        color: purple;
+    }
+
+    50% {
+        border-color: yellow;
+        color: yellow;
+
+    }
+
+    60% {
+        border-color: cyan;
+        color: cyan;
+    }
+
+    70% {
+        border-color: skyblue;
+        color: skyblue;
+    }
+
+    80% {
+        border-color:azure;
+        color: azure;
+    }
+
+    90% {
+        border-color: red;
+        color: red;
+    }
+
+    100% {
+        border-color: yellow;
+        color: yellow;
+    }
+
+}
